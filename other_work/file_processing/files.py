@@ -31,8 +31,14 @@ for i in file.read().strip().split():
     print(i)    
 '''
 
-#Writing lists to files
+# Writing lists to files
 file = open('foo3.txt', 'w')
-file.writelines(['Hello','Wait','Bye'])
+file.writelines(['Hello', 'Wait', 'Bye'])
+# Writelines: Still writes in the same line, unless escaped
+file.close()
+
+# Writing lists to files
+file = open('foo3.txt', 'w')
+file.writelines(['Hello', 'Wait', 'Bye'])
 # Writelines: Still writes in the same line, unless escaped
 file.close()
