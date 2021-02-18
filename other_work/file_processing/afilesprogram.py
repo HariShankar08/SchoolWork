@@ -1,6 +1,4 @@
 #!usr/bin python
-"""A Files Program. Very epic."""
-
 '''
 # Part1 - Writing
 print("Part 1-Writing\n\n")

@@ -52,10 +52,10 @@ file.close()
 
 # Option 4 - readlines()
 file = open('document.txt')
-'''
+"""
 lines = file.readlines()  # Returns lines as a list
 for line in lines:
-    print(line)'''
+    print(line)"""
 lines = file.readlines()
 for line in lines:
     if line.strip()[-2:] == 'ow':
