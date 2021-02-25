@@ -32,3 +32,4 @@ for letter in file.read():
 
 file.close()
 print(f'Found {counter} vowels.')
+
