@@ -1,4 +1,5 @@
 #!/usr/bin python
+"""Yet another files program"""
 
 '''
 file = open('doc.txt', 'w')
@@ -23,8 +24,8 @@ with open('doc.txt', 'a') as file:
     file.write("...Ok then.\n")
 '''
 
-'''
-# Reading AND writing
+"""
+# Reading and writing
 with open('doc.txt', 'w+') as file:
     file.writelines(["Hello\n", "How do you do?\n"])
     file.seek(0)  # seek() method: force shift of file pointer
@@ -33,7 +34,7 @@ with open('doc.txt', 'w+') as file:
 # file.seek(0, x) -> x bytes from beginning of file
 # file.seek(1, x) -> x bytes from current pointer location
 # file.seek(2, x) -> x bytes from end of file (backwards)
-'''
+"""
 
 '''
 with open('doc.txt', 'r') as file:
@@ -50,9 +51,10 @@ with open('doc.txt', 'r+') as file:
     content = file.read()
     content = content.replace('o', 'O')
     file.seek(0)  # This is absolutely necessary!!!
-                  # File pointer is at EOF,
-                  # so writing will write from EOF, effectively appending to the file.
+    # File pointer is at EOF,
+    # so writing will write from EOF, effectively appending to the file.
     file.write(content)
+
 # In this program, w+ instead of r+ will first try to write,
 # If file.write() is not executed before file.read(), the file is made blank,
 # So, basically wrecking the whole program.

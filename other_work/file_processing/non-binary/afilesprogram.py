@@ -1,4 +1,6 @@
 #!usr/bin python
+"""A files program"""
+
 '''
 # Part1 - Writing
 print("Part 1-Writing\n\n")
@@ -23,7 +25,7 @@ for word in file.read().strip().split():
 file.close()
 '''
 
-#Part2.2 - Reading Vowels
+# Part2.2 - Reading Vowels
 file = open('foo2.txt')
 counter = 0
 for letter in file.read():
@@ -32,4 +34,3 @@ for letter in file.read():
 
 file.close()
 print(f'Found {counter} vowels.')
-
