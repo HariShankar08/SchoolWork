@@ -1,4 +1,4 @@
-#!/usr/bin python
+#!/usr/bin/python
 
 def interest(p, n=2, r=0.09):
     return n * p * r
