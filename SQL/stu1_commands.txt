@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS student1(
-NO INT,
+NO INT UNIQUE,
 Name CHAR(25),
 Stipend DECIMAL(5, 2),
 Stream CHAR(25),
