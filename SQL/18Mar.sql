@@ -30,7 +30,7 @@ INSERT INTO student2 (SELECT * FROM student1);
 
 SELECT * FROM employee, job; -- Cartesian Product of two tables
 
--- JOINs
+-- JOIN (EQUI-JOIN)
 SELECT EMPLOYEEID, NAME, SALES, JOBTITLE, SALARY, employee.JOBID FROM employee, job WHERE employee.JOBID = job.JOBID;
 
 -- SHORTENING LONG TABLE NAMES
